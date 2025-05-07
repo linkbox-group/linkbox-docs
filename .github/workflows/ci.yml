@@ -16,10 +16,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: build
-          path: dist/
+          path: site/
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./site
           publish_branch: dist
           keep_files: false
