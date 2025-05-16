@@ -1,3 +1,48 @@
 site_name: LinkBox 文档
 theme:
   name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+
+nav:
+  - 首页: index.md
+  - 基础功能:
+    - 关于云笺: '1. 关于云笺.md'
+    - 收藏服务: '2. 收藏服务.md'
+    - 收藏集: '3. 收藏集.md'
+    - 标签: '4. 标签.md'
+  - 高级功能:
+    - 搜索: '5. 搜索.md'
+    - AI建议: '6. AI建议.md'
+    - 回收站: '7. 回收站.md'
+    - 工具: '8. 工具.md'
+  - 用户相关:
+    - 用户中心: '9. 用户中心.md'
+    - 订阅服务: '10. 订阅服务.md'
+  - FAQ: '11. Q&A.md'
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
